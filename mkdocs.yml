@@ -1,4 +1,7 @@
 site_name: 'AI, Code & Love'
+site_author: 'wangyuxin'
+site_description: 'All content on the site is co-created by me and AI.'
+site_url: 'https://wangyuxinwhy.github.io/space'
 theme:
   name: material
   icon:
