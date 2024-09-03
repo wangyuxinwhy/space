@@ -1,0 +1,73 @@
+site_name: 'AI, Code & Love'
+theme:
+  name: material
+  icon:
+    annotation: material/comma-circle
+    tag:
+      html: fontawesome/brands/html5
+      css: fontawesome/brands/css3
+      js: fontawesome/brands/js
+      python: fontawesome/brands/python
+      rag: fontawesome/solid/magnifying-glass
+      rerank: fontawesome/solid/ranking-star
+      package: fontawesome/solid/box
+  palette: 
+    scheme: default
+    primary: pink
+    accent: teal
+  features:
+    - content.code.copy
+plugins:
+  - tags:
+      enabled: true
+      tags: true
+      tags_file: tags.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - styles/font.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css
+
+extra:
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    Python: python
+    LaTeX: latex
+    RAG: rag
+    Rerank: rerank
+    Package: package
