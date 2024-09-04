@@ -1,7 +1,8 @@
 ---
 tags:
   - Tools
-date: 2024-09-04
+date:
+  created: 2024-09-04
 ---
 
 # Cursor: Features that may be missed
