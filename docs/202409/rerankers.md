@@ -4,8 +4,7 @@ tags:
   - Rerank
   - Python
   - Package
-date:
-  created: 2024-09-03
+date: 2024-09-03
 ---
 
 # rerankers: A Lightweight Python Library to Unify Ranking Methods

@@ -1,7 +1,7 @@
-site_name: 'AI, Code & Love'
-site_author: 'wangyuxin'
-site_description: 'All content on the site is co-created by me and AI.'
-site_url: 'https://wangyuxinwhy.github.io/space'
+site_name: "AI, Code & Love"
+site_author: "wangyuxin"
+site_description: "All content on the site is co-created by me and AI."
+site_url: "https://wangyuxinwhy.github.io/space"
 theme:
   name: material
   icon:
@@ -14,7 +14,8 @@ theme:
       rag: fontawesome/solid/magnifying-glass
       rerank: fontawesome/solid/ranking-star
       package: fontawesome/solid/box
-  palette: 
+      tools: fontawesome/solid/toolbox
+  palette:
     scheme: default
     primary: pink
     accent: teal
@@ -25,6 +26,8 @@ plugins:
       enabled: true
       tags: true
       tags_file: tags.md
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 markdown_extensions:
   - admonition
@@ -32,12 +35,15 @@ markdown_extensions:
   - tables
   - md_in_html
   - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - footnotes
+  - pymdownx.keys
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -48,9 +54,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
   - pymdownx.arithmatex:
       generic: true
 
@@ -74,3 +77,4 @@ extra:
     RAG: rag
     Rerank: rerank
     Package: package
+    Tools: tools
